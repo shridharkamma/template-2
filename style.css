@@ -1,0 +1,175 @@
+body, html{
+  height:100%;
+  background-color: #f4f4f4;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+/*navigation bar styles*/
+.navbar{
+  background-color: #4ABDAC;
+  overflow: hidden;
+  height: 50px;
+}
+
+.navbar a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  color: #000;
+  font-size: 21px;
+  transition: 0.4s ease;
+}
+
+.navbar-nav a:hover{
+  transform: rotate(180deg);
+}
+
+.navbar ul{
+  margin: 8px 0 0 0;
+  list-style: none;
+}
+
+.side-nav{
+  z-index: 1;
+  background-color: #111;
+  transition: 0.6s;
+  padding-top: 60px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  overflow-x: hidden;
+  position: fixed;
+  opacity: 0.8s
+  color: #fff;
+  border-radius: 50px;
+}
+
+.side-nav a{
+  text-decoration: none;
+  padding: 10px 10px 10px 30px;
+  display: block;
+  font-size: 20px;
+  transition: 0.3s;
+  color: #ccc;
+}
+
+.side-nav a:hover{
+  color:#f4f4f4;
+  font-size: 23px;
+  transition: 0.3s
+}
+
+.side-nav .btn-close{
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.side-nav .btn-close:hover{
+  transform: rotate(180deg);
+}
+/*parallax styles*/
+
+/*.button{
+  display:inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  align-content: center;
+}*/
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('http://1.bp.blogspot.com/-iwuw5ra53xE/UIYlU7rq0rI/AAAAAAAACDY/cEk-48zeZeE/s1600/x.JPG');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('https://download.hipwallpaper.com/desktop/1920/1080/29/26/A0Cni1.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+  .navbar-nav{display:none};
+}
+
+Copyrights h6 {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
